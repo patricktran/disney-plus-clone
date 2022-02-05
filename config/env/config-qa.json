@@ -1,0 +1,6 @@
+{
+  "env": "qa",
+  "api": {
+    "disneyBaseUrl": "http://localhost:3001/disneyplus"
+  }
+}

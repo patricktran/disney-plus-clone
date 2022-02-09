@@ -10,7 +10,7 @@ See: mockit-server/configuration/routes.json
 > Requires Docker
 
 ```console
-cd mockit-server
+cd dplus-mockit-server
 docker-compose up --build -d
 
 cd ... //go back to root

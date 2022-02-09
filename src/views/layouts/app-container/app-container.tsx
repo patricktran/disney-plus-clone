@@ -3,21 +3,17 @@ import { useEffect, useState } from "react";
 
 import { catalogActions } from "state/ducks/catalog";
 import { useAppDispatch } from "state/hooks";
-import { useGetEnvConfig } from "state/services/react-query/hooks/local/config";
 import AppContext from "utils/app-context";
 
 const AppLayout: FC<{}> = ({ children }) => {
   const dispatch = useAppDispatch();
-
+  console.log(process.env);
   const [isAppContextReady, setIsAppContextReady] = useState(false);
-  const { data: configData, isSuccess: isConfigSuccess } = useGetEnvConfig();
 
   useEffect(() => {
-    if (isConfigSuccess && configData) {
-      AppContext.Config = configData;
-      setIsAppContextReady(true);
-    }
-  }, [isConfigSuccess, configData]);
+    AppContext.HydrateConfig();
+    setIsAppContextReady(true);
+  }, []);
 
   // fetch the catalog once per app session once AppConfig is hydrated
   useEffect(() => {

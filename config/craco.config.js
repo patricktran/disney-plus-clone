@@ -1,16 +1,11 @@
 const { whenDev } = require("@craco/craco");
 const CircularDependencyPlugin = require("circular-dependency-plugin");
-const GenerateJsonPlugin = require("generate-json-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = async function ({ env }) {
-  const envConfig = process.env.REACT_APP_CONFIG_ENV || "dev";
-  const envConfigJson = require(`./env/config-${envConfig}.json`);
-
   return {
     webpack: {
       plugins: [
-        new GenerateJsonPlugin("./config.json", envConfigJson),
         ...whenDev(
           () => [
             new CircularDependencyPlugin({

@@ -2,6 +2,16 @@ import React from "react";
 
 import styled, { StyledComponent, css } from "styled-components/macro";
 
+type Variant = "h1" | "h2" | "h3" | "h4" | "pl" | "p" | "ps" | "pxs" | "cta";
+type Weight = 700;
+
+interface Props {
+  children?: React.ReactNode;
+  className?: string;
+  variant: Variant;
+  weight?: Weight;
+}
+
 type StyledProps = Pick<Props, "weight">;
 
 const weightModifier = (props: StyledProps) =>
@@ -86,18 +96,8 @@ const CTA = styled.span<StyledProps>`
   ${(props) => weightModifier(props)}
 `;
 
-type Variant = "h1" | "h2" | "h3" | "h4" | "pl" | "p" | "ps" | "pxs" | "cta";
-type Weight = 700;
-
 interface VariantRecord {
   Component: StyledComponent<any, any, any>;
-}
-
-interface Props {
-  children?: React.ReactNode;
-  className?: string;
-  variant: Variant;
-  weight?: Weight;
 }
 
 const variantMapping: Record<Variant, VariantRecord> = {
@@ -120,8 +120,12 @@ const Typography = ({
   ...props
 }: React.HTMLProps<HTMLElement> & Props) => {
   const { Component } = variantMapping[variant];
+
+  const CastedComponent = Component as
+    | React.ElementType
+    | keyof JSX.IntrinsicElements;
   // using createElement because https://github.com/microsoft/TypeScript/issues/28892
-  return React.createElement(
+  /* return React.createElement(
     Component,
     {
       className,
@@ -129,6 +133,12 @@ const Typography = ({
       ...props,
     },
     children
+  );*/
+
+  return (
+    <CastedComponent className={className} weight={weight} {...props}>
+      {children}
+    </CastedComponent>
   );
 };
 

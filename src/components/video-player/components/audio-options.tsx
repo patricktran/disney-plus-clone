@@ -5,8 +5,10 @@ import styled, { css } from "styled-components/macro";
 
 import Icon, { IconButton } from "components/icon";
 import Typography from "components/typography";
-import { disableScrollbar } from "styles/theme";
-import { defaultVideoControlsOpacity } from "styles/theme";
+import {
+  disableScrollbar,
+  defaultVideoControlsOpacity,
+} from "styles/placeholders/base";
 import AppContext from "utils/app-context";
 
 interface Props {

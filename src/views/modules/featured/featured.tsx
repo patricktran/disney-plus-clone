@@ -39,9 +39,7 @@ const Featured = ({
     catalogSelectors.getByCollectionType(state, collectionType)
   );
 
-  const catalogIsLoading = useAppSelector((state) =>
-    catalogSelectors.isLoading(state)
-  );
+  const catalogIsLoading = useAppSelector(catalogSelectors.isLoading);
 
   // curry function
   const onClick = (itemId: number) => () => {

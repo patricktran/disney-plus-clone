@@ -4,7 +4,7 @@ import styled, { css } from "styled-components/macro";
 
 import Button from "components/button";
 import Icon from "components/icon";
-import { defaultVideoControlsOpacity } from "styles/theme";
+import { defaultVideoControlsOpacity } from "styles/placeholders/base";
 import { noop } from "utils/helpers/functional";
 
 interface Props {

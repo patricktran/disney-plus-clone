@@ -10,7 +10,7 @@ import styled, { css } from "styled-components/macro";
 
 import Loader, { OverlayLoader } from "components/loader";
 import CreatePortal from "components/portal";
-import { defaultVideoControlsOpacity } from "styles/theme";
+import { defaultVideoControlsOpacity } from "styles/placeholders/base";
 
 import AudioOptions from "./components/audio-options";
 import DefaultAudioOptionsBug from "./components/default-audio-options-bug";

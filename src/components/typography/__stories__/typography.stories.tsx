@@ -108,10 +108,5 @@ export const WeightStory = () => (
   </table>
 );
 
-Default.story = {
-  name: "Default",
-};
-
-WeightStory.story = {
-  name: "Weight",
-};
+Default.storyName = "Default";
+WeightStory.storyName = "Weight";

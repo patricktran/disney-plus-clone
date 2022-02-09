@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/macro";
 import { defaultTheme } from "../src/styles/theme";
 import GlobalStyle from "../src/styles/global";
 

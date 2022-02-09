@@ -1,13 +1,12 @@
 import {
-  ui as ShakaUI,
-  // @ts-ignore
-} from "shaka-player/dist/shaka-player.ui";
-
-import {
   ForwardTenButton,
   RewindTenButton,
   VerticalVolume,
-} from "../custom-controls";
+} from "shaka-player-ui-controls";
+import {
+  ui as ShakaUI,
+  // @ts-ignore
+} from "shaka-player/dist/shaka-player.ui";
 
 ShakaUI.Controls.registerElement(
   "vertical_volume",

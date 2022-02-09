@@ -19,6 +19,7 @@ import { audioOptions, subtitleOptions } from "./config/mock-data";
 import uiConfig from "./config/ui";
 import useShowOverlayIdle from "./hooks/use-show-overlay-idle";
 import "shaka-player/dist/controls.css";
+import "shaka-player-ui-controls/dist/main.css";
 
 interface Props {
   url: string;
@@ -214,8 +215,6 @@ const Container = styled.div<{
       .shaka-controls-button-panel {
         position: relative;
         justify-content: flex-start;
-        order: initial;
-        overflow: initial;
 
         button {
           line-height: initial;
@@ -243,39 +242,6 @@ const Container = styled.div<{
           css`
             opacity: 1;
           `}
-
-        .shaka-volume-container {
-          position: relative;
-
-          &:hover .shaka-volume-bar-container {
-            opacity: 1;
-          }
-
-          .shaka-mute-button {
-            color: #fff;
-            height: 32px;
-            margin: 1px 6px;
-            padding: 0;
-            background: 0 0;
-            border: 0;
-            cursor: pointer;
-          }
-
-          .shaka-volume-bar-container {
-            position: absolute;
-            order: initial;
-            width: 100px;
-            top: -58px;
-            left: -35px;
-            transition: all 300ms ease-in-out 100ms;
-            transform: rotate(-90deg);
-            opacity: 0;
-
-            input {
-              cursor: pointer;
-            }
-          }
-        }
       }
 
       .shaka-current-time {

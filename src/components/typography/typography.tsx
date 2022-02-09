@@ -12,12 +12,12 @@ interface Props {
   weight?: Weight;
 }
 
-type StyledProps = Pick<Props, "weight">;
+type StyledProps = { $weight: Weight };
 
 const weightModifier = (props: StyledProps) =>
-  props.weight &&
+  props.$weight &&
   css`
-    font-weight: ${props.weight};
+    font-weight: ${props.$weight};
   `;
 
 const H1 = styled.h1<StyledProps>`
@@ -120,23 +120,13 @@ const Typography = ({
   ...props
 }: React.HTMLProps<HTMLElement> & Props) => {
   const { Component } = variantMapping[variant];
-
+  // cast component due to TS
   const CastedComponent = Component as
     | React.ElementType
     | keyof JSX.IntrinsicElements;
-  // using createElement because https://github.com/microsoft/TypeScript/issues/28892
-  /* return React.createElement(
-    Component,
-    {
-      className,
-      weight,
-      ...props,
-    },
-    children
-  );*/
 
   return (
-    <CastedComponent className={className} weight={weight} {...props}>
+    <CastedComponent className={className} $weight={weight} {...props}>
       {children}
     </CastedComponent>
   );

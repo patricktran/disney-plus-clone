@@ -8,9 +8,13 @@ import Routes from "routes";
 import queryClient from "state/services/react-query/query-client";
 import GlobalStyle from "styles/global";
 import { defaultTheme } from "styles/theme";
+import AppContext from "utils/app-context";
 import AppContainer from "views/layouts/app-container";
 
 import store from "./state/store";
+
+// hydrate AppContent with environment variables
+AppContext.HydrateConfig();
 
 ReactDOM.render(
   <Provider store={store}>

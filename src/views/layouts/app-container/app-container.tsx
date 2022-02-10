@@ -1,28 +1,19 @@
-import { FC } from "react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { catalogActions } from "state/ducks/catalog";
 import { useAppDispatch } from "state/hooks";
-import AppContext from "utils/app-context";
+interface Props {
+  children?: React.ReactNode;
+}
 
-const AppLayout: FC<{}> = ({ children }) => {
+const AppLayout = ({ children }: Props) => {
   const dispatch = useAppDispatch();
-  console.log(process.env);
-  const [isAppContextReady, setIsAppContextReady] = useState(false);
 
   useEffect(() => {
-    AppContext.HydrateConfig();
-    setIsAppContextReady(true);
-  }, []);
+    dispatch(catalogActions.get());
+  }, [dispatch]);
 
-  // fetch the catalog once per app session once AppConfig is hydrated
-  useEffect(() => {
-    if (isAppContextReady) {
-      dispatch(catalogActions.get());
-    }
-  }, [dispatch, isAppContextReady]);
-
-  return isAppContextReady ? <div>{children}</div> : null;
+  return <>{children}</>;
 };
 
 export default AppLayout;

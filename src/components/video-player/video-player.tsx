@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
 import {
+  // @ts-ignore
   Player as ShakaPlayer,
+  // @ts-ignore
   polyfill as ShakaPolyfill,
+  // @ts-ignore
   ui as ShakaUI,
   // @ts-ignore
 } from "shaka-player/dist/shaka-player.ui";
@@ -32,6 +35,7 @@ const VideoPlayerShak = ({ url, title, onTitleBugClick }: Props) => {
   const [isVisible, setIsVisible] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  // placing inside useState instead of useRef because we want to trigger re-renders
   const [spinnerContainerRef, setSpinnerContainerRef] =
     useState<HTMLDivElement>();
   const [videoPaused, setVideoPaused] = useState(false);
@@ -69,7 +73,7 @@ const VideoPlayerShak = ({ url, title, onTitleBugClick }: Props) => {
     };
   }, [url]);
 
-  // get example thumbnail
+  // WIP - get example thumbnail
   // https://github.com/google/shaka-player/issues/3371
   useEffect(() => {
     if (isVisible && player) {
@@ -80,6 +84,7 @@ const VideoPlayerShak = ({ url, title, onTitleBugClick }: Props) => {
         // const realPosition = seekRange.end - position;
         console.log("seekRange", seekRange);
 
+        // (trackId, time)
         player.getThumbnails(12, 90).then((data: any) => console.log(data));
       }, 2000);
     }

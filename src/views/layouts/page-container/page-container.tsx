@@ -29,6 +29,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  user-select: none;
 
   &::after {
     background: url(${HomeBackgroundImage}) center center / cover no-repeat

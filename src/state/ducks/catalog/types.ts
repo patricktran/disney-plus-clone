@@ -3,7 +3,8 @@ export type CollectionType =
   | "recommend"
   | "new"
   | "trending"
-  | "original";
+  | "original"
+  | "origin";
 
 export interface Catalog {
   id: number;

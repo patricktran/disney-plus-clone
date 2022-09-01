@@ -13,6 +13,11 @@ const Home = () => {
       <Brands />
       <Featured title="All" collectionType="all" useCarousel={true} />
       <ContinueWatching />
+      <Featured
+        title="Marvel Origin Stories"
+        collectionType="origin"
+        cardLayout="portrait"
+      />
       <Featured title="Recommended For You" collectionType="recommend" />
       <Featured title="New to Disney+" collectionType="new" />
       <Featured title="Originals" collectionType="original" />

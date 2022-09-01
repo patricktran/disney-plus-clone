@@ -1,353 +1,463 @@
 {
-    "settings": {
-        "features": {
-            "chaosMonkey": false,
-            "cors": true,
-            "authentication": false,
-            "groupedRoutes": false
-        },
-        "authentication": {
-            "username": "test",
-            "password": "test"
-        }
+  "settings": {
+    "features": {
+      "chaosMonkey": false,
+      "cors": true,
+      "authentication": false,
+      "groupedRoutes": false
     },
-    "routes": [
-        {
-            "id": "6f935aa8-b629-4247-ba51-f02347b06e95",
-            "route": "/user",
-            "httpMethod": "GET",
-            "statusCode": "200",
-            "delay": "0",
-            "payload": {
-                "name": "Jermain Spinka",
-                "username": "Agnes71",
-                "email": "Taurean.Huels55@hotmail.com",
-                "address": {
-                    "street": "Kihn Inlet",
-                    "suite": "Apt. 784",
-                    "city": "South Doraside",
-                    "zipcode": "91828",
-                    "geo": {
-                        "lat": "-56.8426",
-                        "lng": "-122.9710"
-                    }
-                },
-                "phone": "810-578-0341",
-                "website": "jewell.name",
-                "company": {
-                    "name": "Quitzon, Wilderman and VonRueden",
-                    "catchPhrase": "Realigned zero administration encoding",
-                    "bs": "robust incubate synergies"
-                }
-            },
-            "disabled": false,
-            "headers": [
-                {
-                    "id": "b3f30451-3e1c-444f-9bfc-cb42441e9824",
-                    "header": "x-api-key",
-                    "value": "testing123"
-                }
-            ]
+    "authentication": {
+      "username": "test",
+      "password": "test"
+    }
+  },
+  "routes": [
+    {
+      "id": "6f935aa8-b629-4247-ba51-f02347b06e95",
+      "route": "/user",
+      "httpMethod": "GET",
+      "statusCode": "200",
+      "delay": "0",
+      "payload": {
+        "name": "Jermain Spinka",
+        "username": "Agnes71",
+        "email": "Taurean.Huels55@hotmail.com",
+        "address": {
+          "street": "Kihn Inlet",
+          "suite": "Apt. 784",
+          "city": "South Doraside",
+          "zipcode": "91828",
+          "geo": {
+            "lat": "-56.8426",
+            "lng": "-122.9710"
+          }
         },
-        {
-            "id": "eeda090b-017f-4f72-bde7-75f3a38d33ed",
-            "route": "/disneyplus/catalog",
-            "httpMethod": "GET",
-            "statusCode": "200",
-            "delay": "500",
-            "payload": {
-                "items": [
-                    {
-                        "id": 1,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/49B92C046117E89BC9243A68EE277A3B30D551D4599F23C10BF0B8C1E90AEFB6/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/87F1DCF36049558159913ADFD18A800DE1121771540033EC3A7651B8FE154CEB/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "When 11-year-old Riley moves to a new city, her Emotions team up to help her through the transition. Joy, Fear, Anger, Disgust and Sadness work together, but when Joy and Sadness get lost, they must journey through unfamiliar places to get back home.",
-                        "subTitle": "2015 • 1h 35m • Coming of Age, Family, Animation",
-                        "title": "Inside Out",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C647DF3FFBFA343CFEA84AC715148F25F9E86F398B408010CC403E7654FB908/scale?width=1440&aspectRatio=1.78",
-                        "type": "recommend"
-                    },
-                    {
-                        "id": 2,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4E9E81584305009D6385F6178D4B6930E97CD6EC4A3B53C818400DEF778FFA9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B983FF22BA64B6E19E0D3267280819B26758CFB765E8BED1099D11E320612953/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "Garfield is adopted by a greedy Lord with nefarious plans to open up his estate as a hunting ground.",
-                        "subTitle": "2006 • 1h 19m • Family, Comedy, Kids",
-                        "title": "A tail of two kitties",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/50B933E83609BEEFEDFA177A6D96DBFA7804C14F70A0B5AB314E892E65498ACF/scale?width=1440&aspectRatio=1.78",
-                        "type": "new"
-                    },
-                    {
-                        "id": 3,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/706C68FF1CEA5A9C2AE0608892C2DF79E4AC1F0DDB4BFF7FE6DAFC36DAFC0286/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "A Chinese mom who’s sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. But she finds that nothing stays cute and small forever.",
-                        "subTitle": "2018 • 7m • Family, Fantasy, Kids, Animation",
-                        "title": "Bao",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78",
-                        "type": "recommend"
-                    },
-                    {
-                        "id": 4,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA1548A6B82C9991B1D38DF251A388FEA2483904510FBC73E150F67F7BDE38C0/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0ECD36DD35658155915685271440833C29ED87E788CF8AE111AA6BCA6B939C37/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "When the kingdom's most wanted bandit is taken hostage by Rapunzel — a teen with 70 feet of golden hair who's looking to escape the tower where she's been locked away for years — the unlikely duo sets off on a hair-raising escapade.",
-                        "subTitle": "2010 • 1h 40m • Family, Fantasy, Animation, Action-Adventure, Musical",
-                        "title": "Tangled",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F70235E3463A6F246EB462ED5379F9D41D6318E80098BD40900E7AFC1C7D932D/scale?width=1440&aspectRatio=1.78",
-                        "type": "trending"
-                    },
-                    {
-                        "id": 5,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/56EEBB17CC25C9FE16E334C34EF96BF7D91EC9BA3B438F88FB24E1C2AE785E03/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E486A02FA7B60669E77958D4FAE567AA5C9C57344006E1D1ADFC080719545166/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-                        "description": "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
-                        "subTitle": "2020 • 1h 49m • Family, Comedy, Fantasy, Animation, Music",
-                        "title": "Soul",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E837DDE901CD036DD87A00F2D63E2F2458FAA798E62BE91F973AECCEA313A67E/scale?width=1440&aspectRatio=1.78",
-                        "type": "original"
-                    },
-                    {
-                        "id": 6,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/AAC4808815AE5721A6AAB372DD14B8CE2E7E9EFF3A27942EF2B6B45EBF4E65CB/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/501783804F435A386DBC4736F529A8EF664B1817CCB0B552E52D825B85B0A97B/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "Moana sets sail on a daring mission to save her people. Along the way, she meets the mighty demigod Maui–together they cross the ocean on a fun-filled, action-packed voyage from Walt Disney Animation Studios.",
-                        "subTitle": "2016 • 1h 47m • Family, Fantasy, Animation, Action-Adventure, Musical",
-                        "title": "Moana",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9562874BAB22B22A698368819B9EBF30FEB0291543552EB2416A5A61A73F63F4/scale?width=1440&aspectRatio=1.78",
-                        "type": "trending"
-                    },
-                    {
-                        "id": 7,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B409C2A425D58C32D822EB633C7CAE3DC910DC2FC62D2B1807A0BB092C531E9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C0A883EAB54DDDC924018D08CF4555EE72B3E9A8C214BDADF29CB82B5E2275D7/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "While Helen is called on to lead a campaign to bring back the Supers, Bob navigates the day-to-day heroics of “normal” life at home with Violet, Dash and Jack-Jack, whose superpowers are about to be discovered. Their mission is derailed, however, when a new villain emerges with a brilliant and dangerous plot that threatens everything. But with Frozone by their side, the Parrs can take on anything.",
-                        "subTitle": "2018 • 1h 58m • Science Fiction, Family, Animation, Action-Adventure",
-                        "title": "Incredibles 2",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78",
-                        "type": "recommend"
-                    },
-                    {
-                        "id": 8,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D53D1F5D357587A8D09067AB09FFC7096F837CBAAE02BDC3C0E75814471A1E36/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CC08686E87BDB2D83A46C9608CB2F43018381A82608C380649351A00ED0D2919/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-                        "description": "ASSEMBLED is an immersive series of documentary-style specials examining the creation of Marvel Studios’ thrilling new shows and theatrical releases.",
-                        "subTitle": "2021 • 1 Season • Docuseries, Anthology",
-                        "title": "Assembled",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/37D80C5D1AB0BA65C63588311EC60A07342F60F91D402C28B8E1137AF6A30549/scale?width=1440&aspectRatio=1.78",
-                        "type": "original"
-                    },
-                    {
-                        "id": 9,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2A509165105A09F9F533E2008B143BCF38D6A5859D0EBB40CCA388772005CD94/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A13BEC78ACF76FC91A94A1595A62A42CC26DFC6259332C74E061ADA379024E5C/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-                        "description": "A young rabbit embarks on a journey to dig the burrow of her dreams, despite not having a clue what she’s doing. Rather than reveal to her neighbors her imperfections, she digs herself deeper and deeper into trouble. After hitting (bed)rock bottom, she learns there is no shame in asking for help.",
-                        "subTitle": "2020 • 6m • Family, Animation",
-                        "title": "Burrow",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD8BBA864E290FBC03A244A488FFC8DC8365FBF2F95A122B1D57BF3772D717FD/scale?width=1440&aspectRatio=1.78",
-                        "type": "original"
-                    },
-                    {
-                        "id": 10,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/223DAE104BE1175F374C4AACAC0EB5B8B0DB9C49839AA2E10085533DDFE07A8E/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6EA416AD3B15FCC1BADC817A932A57FFF707556DB2233FFCB4CFEB7C8EEDE23C/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "This animated comedy focuses on the eponymous family in the town of Springfield. The head of the Simpson family, Homer, is not a typical family man. A nuclear-plant employee, he does his best to lead his family but often finds that they are leading him. The family includes loving, blue-haired matriarch Marge, troublemaking son Bart, overachieving daughter Lisa and baby Maggie.",
-                        "subTitle": "1989 - 2019 • 31 Seasons • Comedy, Animation",
-                        "title": "The Simpsons",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/47A6FB38D95B3A5EF5583C9EED0B698ED2992CBA4AC7222DD3269DC92DFA03A6/scale?width=1440&aspectRatio=1.78",
-                        "type": "trending"
-                    },
-                    {
-                        "id": 11,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F6CDB6C0EB2D77EB19BCADA31F85066E001A1F61FA68F4AC3356A73FE076477F/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F8D1A6FD00ED479CC5E2E5C3E85F10EB05550748BD3C0FE76756614071968541/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-                        "description": "Marvel Studios LEGENDS traces Wanda Maximoff’s evolution from an adversary of The Avengers to a powerful ally, and highlights one special relationship destined to shape her future in unexpected ways…",
-                        "subTitle": "2021 • 1 Season • Science Fiction, Fantasy, Action-Adventure",
-                        "title": "Legends",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DDFF0FDF457E092EE53149CE7DB5BD14CB97E27B92D2D087E7C687B4E3073DE2/scale?width=1440&aspectRatio=1.78",
-                        "type": "original"
-                    },
-                    {
-                        "id": 12,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09A0617D43282F1A4FA1A97DF6159B4263A8DEB9679A007B61D5E5D6E5D0A2DD/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1E0501AFBAFCA1ABB5D31DBA7D1A913B2A35D70FD3DFD804939B71901577161D/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "Watch with Premier Access at the same time it's in open theaters and before it's available to all Disney+ subscribers on June 4, 2021.",
-                        "subTitle": "2021 • 1h 52m • Family, Fantasy, Animation, Action-Adventure",
-                        "title": "Raya",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E7D8EFFDD30B2A0E205DDD9929207439B21E7595709769F2A23C50457664FFB2/scale?width=1440&aspectRatio=1.78",
-                        "type": "new"
-                    },
-                    {
-                        "id": 13,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09DAD6A5DAECB6BA9E329FFA896B18978FE4AD5540C070D7973EE53357DD4D24/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/01666FAA085FF29B709DB13975E563E5E047DAAFF7D8F331201CB73F3C30027E/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "When Bob Parr visits designer Edna Mode for help with his high-energy toddler, she pulls an all-nighter designing a supersuit to harness Jack-Jack’s seemingly limitless powers.",
-                        "subTitle": "2018 • 7m • Family, Comedy, Animation",
-                        "title": "Auntie EDNA",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A31BE6502DC7A3A01DAF58DF7E91AB6FF598A078C8FA88A1DB2D7B7E25439464/scale?width=1440&aspectRatio=1.78",
-                        "type": "recommend"
-                    },
-                    {
-                        "id": 14,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6FF2B403436E6558C08FB44B40AE334A9172FA293A8325940E8E7FF7F696E4D3/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/509E4D9F0BF98A9DC4CDD38954380782F6AB2664E503CC7652A37D18D06666BF/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "Mickey entertains preschoolers by inviting them to join him and his friends for a date at the Clubhouse. Using early math learning and problem solving skills, he leads kids on an interactive adventure of learning and fun.",
-                        "subTitle": "2006 - 2013 • 5 Seasons • Kids, Animation",
-                        "title": "Mickey mouse",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4FF3FCD567F0263430DFC33B9489CE2799AE33B50AD553DE65F03B3EA2E19828/scale?width=1440&aspectRatio=1.78",
-                        "type": "trending"
-                    },
-                    {
-                        "id": 15,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/456A711C19899C881600F6247705E5253EB18C2471D75E5281E1FF6ACB6D2FBA/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
-                        "description": "Marvel Studios’ “The Falcon and The Winter Soldier” stars Anthony Mackie as Sam Wilson aka The Falcon, and Sebastian Stan as Bucky Barnes aka The Winter Soldier. The pair, who came together in the final moments of “Avengers: Endgame,” team up on a global adventure that tests their abilities—and their patience.",
-                        "subTitle": "2021 • 1 Season • Science Fiction, Action-Adventure, Buddy",
-                        "title": "The falcon and the winter soldier",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4A67A42FB16607DAE7E22266D3F00181965178ED1884047C2D982EE7D89D3554/scale?width=1440&aspectRatio=1.78",
-                        "type": "new"
-                    },
-                    {
-                        "id": 16,
-                        "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/28F85D4A1F7CA135B7B20B3EDB42EDA73196C2A71C52C5400A6C2285F8E071BE/scale?width=1440&aspectRatio=1.78&format=jpeg",
-                        "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4B32D8CB7C0C358E9FF348FB0338AD13F9A5836808E9EF5FADD9DBDE52FC3CAD/scale?width=400&aspectRatio=1.78&format=jpeg",
-                        "description": "J-Pop band Perfume is featured in this original music and documentary series 'Disney’s My Music Story.' The show features Perfume's life stories, passion for music, Disney memories, and more.",
-                        "subTitle": "2019 • 53m • Documentary, Biographical, Music",
-                        "title": "My music story",
-                        "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/97BB36F8B9FC053F561894DD7B1C42C4FD20E63560F481CBCB3B9D3600CFCA3B/scale?width=1440&aspectRatio=1.78",
-                        "type": "new"
-                    }
-                ]
-            },
-            "headers": []
-        },
-        {
-            "id": "659d95e8-ce82-44fe-83f0-edd792b76430",
-            "route": "/disneyplus/continuewatching",
-            "httpMethod": "GET",
-            "statusCode": "200",
-            "delay": "1000",
-            "payload": [
-                {
-                    "programType": "episode",
-                    "title": "Hawkeye",
-                    "subTitle": "S1: E5 Ronin",
-                    "progressValue": 10,
-                    "remainingTimeM": 36,
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C64B81921DF04A82B499881F99AA0D94AFBEA0FC07CCED5084198ADF114D6045/badging?width=400&aspectRatio=NaN&format=jpeg&label=disneyplusoriginal",
-                    "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E85F0AE2D3DAA98BFA8A8E539A8EDAE2A4A19FB702B42555F5E4939D578F3310/scale?width=400&aspectRatio=NaN&format=jpeg"
-                },
-                {
-                    "programType": "episode",
-                    "title": "Mandalorian",
-                    "subTitle": "S1:E8 Chapter 8: Redemption",
-                    "progressValue": 51,
-                    "remainingTimeM": 21,
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4C2A5D03CCBD302C234F646ABB5F8C147F4D1218CB191D17A057B46D642DC255/badging?width=800&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
-                    "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/75D42F1A9456EEFB959F132C9891BED5C095FDE1656954198FA723FAD7623C9B/scale?width=800&aspectRatio=1.78&format=jpeg"
-                },
-                {
-                    "programType": "episode",
-                    "title": "Wild Hawaii",
-                    "subTitle": "S1:E1 Land of Fire",
-                    "progressValue": 30,
-                    "remainingTimeM": 124,
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/85B741C15E0B02F2EC404B70AEEADC91F8DEE62FEA73CC0E39589E1F754FBB9A/scale?width=800&aspectRatio=1.78&format=jpeg",
-                    "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8BD7B086AD84F3744D9860C8BE9ECAA76FE2669EB3E5E2F899EF0CEBC7D0CF31/scale?width=800&aspectRatio=1.78&format=jpeg"
-                },
-                {
-                    "programType": "movie",
-                    "title": "Marvel Studios' Avengers: Endgame",
-                    "progressValue": 82,
-                    "remainingTimeM": 48,
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4B6A6F8433AF3163164D801742FEB9DBE26259E8AB9035FFBF4856C9DC3067BF/scale?width=800&aspectRatio=1.78&format=jpeg"
-                }
-            ],
-            "headers": []
-        },
-        {
-            "id": "8eff62bd-edf6-4e0c-905b-1543684d28bb",
-            "route": "/disneyplus/heroes",
-            "httpMethod": "GET",
-            "statusCode": "200",
-            "delay": "500",
-            "payload": [
-                {
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4935C3278A39E65D10E52CDDF97C2FEC233766709C678516FA95D133747C4467/scale?width=1440&aspectRatio=3.91&format=jpeg"
-                },
-                {
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/28E5F40FFC193914040F79D8101E1E519473C0B5EAB4BE8FC502C2CCD83050C8/compose?width=1440&aspectRatio=3.91&format=jpeg&label=391_scrim"
-                },
-                {
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/54373A3738774EC342F1FC2C1513F1B1C560E1F7543D2357446A90E2B55E74F1/scale?width=1440&aspectRatio=3.91&format=jpeg"
-                },
-                {
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09463FB0C68877B902F12290649FE0A263CFFB4735DB50C3EB7DFD95AF4C912C/compose?width=1440&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim"
-                },
-                {
-                    "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3A68411C94EAC6CE95C364E86089CEF3078A7689C7CE72CF5B3F8B031D092929/compose?width=1440&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim",
-                    "title": "hi"
-                }
-            ],
-            "headers": []
-        },
-        {
-            "id": "9b1ca8d3-2bef-4e54-97d4-fe2096b0d0d2",
-            "route": "/disneyplus/userprofile/:userId",
-            "httpMethod": "PUT",
-            "statusCode": "200",
-            "delay": "1500",
-            "payload": {
-                "success": true
-            },
-            "headers": [],
-            "disabled": false
-        },
-        {
-            "id": "9eb7f30f-2761-4a77-a7d8-30338f58117c",
-            "route": "/disneyplus/:seriesid/episodes",
-            "httpMethod": "GET",
-            "statusCode": "200",
-            "delay": "250",
-            "payload": [
-                {
-                    "id": 1,
-                    "title": "Simpsons Roasting on an Open Fire",
-                    "description": "Homer's Christmas bonus is canceled and the rainy-day funds are needed for Bart's tattoo removal.",
-                    "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4ECAFB1C3AF194EA01A7DA07AE07F3A6318865D1BBCE734E77421CFB7E4357E1/scale?width=800&aspectRatio=NaN&format=jpeg"
-                },
-                {
-                    "id": 2,
-                    "title": "Bart the Genius",
-                    "description": "Bart is moved to a school for the gifted after he switches aptitude tests with another boy.",
-                    "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8BB3908FC1C0689DAD1428ACDF8C578B4594F0E0C98F468C641FE696C7E1AB95/scale?width=800&aspectRatio=NaN&format=jpeg"
-                },
-                {
-                    "id": 3,
-                    "title": "Homer's Odyssey",
-                    "description": "Bart is moved to a school for the gifted after he switches aptitude tests with another boy.",
-                    "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB24F158A3B647D0E9ADE5DC7D4B66BC7DA1B5085C9393EE4BDAE719685E71EB/scale?width=800&aspectRatio=NaN&format=jpeg"
-                },
-                {
-                    "id": 4,
-                    "title": "There's No Disgrace Like Home",
-                    "description": "After seeing families being nice to each other, Homer orders the Simpsons to a therapist.",
-                    "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/132BD10FE6171F36A0268CD6BA027B1E840340C5A611FC73A77E24DDC516461A/scale?width=800&aspectRatio=NaN&format=jpeg"
-                },
-                {
-                    "id": 5,
-                    "title": "Bart the General",
-                    "description": "Bart seeks counsel from Grandpa Simpson, who takes him to a warfare expert for basic training.",
-                    "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7001054A4E0B2273596AAB916AA0A2BA9D117DD9D2EE13277A7445D40928792C/scale?width=800&aspectRatio=NaN&format=jpeg"
-                },
-                {
-                    "id": 6,
-                    "title": "Moaning Lisa",
-                    "description": "Second grade has Lisa playing the blues solo. Homer seeks tutelage to beat Bart at video boxing.",
-                    "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1A0A7049AE5E9ADE79803B7085B9F396D1A537285D0EC85DF854ED50E4459F1F/scale?width=800&aspectRatio=NaN&format=jpeg"
-                }
-            ],
-            "headers": []
+        "phone": "810-578-0341",
+        "website": "jewell.name",
+        "company": {
+          "name": "Quitzon, Wilderman and VonRueden",
+          "catchPhrase": "Realigned zero administration encoding",
+          "bs": "robust incubate synergies"
         }
-    ]
+      },
+      "disabled": false,
+      "headers": [
+        {
+          "id": "b3f30451-3e1c-444f-9bfc-cb42441e9824",
+          "header": "x-api-key",
+          "value": "testing123"
+        }
+      ]
+    },
+    {
+      "id": "eeda090b-017f-4f72-bde7-75f3a38d33ed",
+      "route": "/disneyplus/catalog",
+      "httpMethod": "GET",
+      "statusCode": "200",
+      "delay": "500",
+      "payload": {
+        "items": [
+          {
+            "id": 10,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/223DAE104BE1175F374C4AACAC0EB5B8B0DB9C49839AA2E10085533DDFE07A8E/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6EA416AD3B15FCC1BADC817A932A57FFF707556DB2233FFCB4CFEB7C8EEDE23C/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "This animated comedy focuses on the eponymous family in the town of Springfield. The head of the Simpson family, Homer, is not a typical family man. A nuclear-plant employee, he does his best to lead his family but often finds that they are leading him. The family includes loving, blue-haired matriarch Marge, troublemaking son Bart, overachieving daughter Lisa and baby Maggie.",
+            "subTitle": "1989 - 2019 • 31 Seasons • Comedy, Animation",
+            "title": "The Simpsons",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/47A6FB38D95B3A5EF5583C9EED0B698ED2992CBA4AC7222DD3269DC92DFA03A6/scale?width=1440&aspectRatio=1.78",
+            "type": "trending"
+          },
+          {
+            "id": 2,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4E9E81584305009D6385F6178D4B6930E97CD6EC4A3B53C818400DEF778FFA9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B983FF22BA64B6E19E0D3267280819B26758CFB765E8BED1099D11E320612953/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "Garfield is adopted by a greedy Lord with nefarious plans to open up his estate as a hunting ground.",
+            "subTitle": "2006 • 1h 19m • Family, Comedy, Kids",
+            "title": "A tail of two kitties",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/50B933E83609BEEFEDFA177A6D96DBFA7804C14F70A0B5AB314E892E65498ACF/scale?width=1440&aspectRatio=1.78",
+            "type": "new"
+          },
+          {
+            "id": 20,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/250B9E532D3AB378EFF4F3EB39D18959795DDE4BF7FB83995DB107AFC9A23D46/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9678FC74FB52573A4F9E8CFEB7E05C930094B1590C1175C530B014E14AA19434/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
+            "description": "Obi-Wan Kenobi lives a humble existence on Tatooine. Despite the dangers of being a Jedi survivor at the height of the Empire, Kenobi is forced to emerge from hiding.",
+            "subTitle": "2022 • 1 season • Science Fiction, Action-Adventure",
+            "title": "Obi-Wan Kenobi",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DF36C3E145545FC53827E7907B8E92577C94229ED06F8E9DEBB29D5ACAA9A7CE/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "trending"
+          },
+          {
+            "id": 18,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/91DF07903AD37CA108157367F97BB4BB7461FADD1F18FEA0127E5162A39A5B72/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/13801DFFD4E0E54C13CD87EA6385AEC13E8B92C7BA593B6C4B6852DFC1BB909F/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
+            "description": "When Steven Grant, a mild-mannered gift shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while involved in a deadly mystery among the powerful gods of Egypt.",
+            "subTitle": "2022 • 1 season • Fantasy, Super Hero, Action-Adventure",
+            "title": "MoonKnight",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C647DF3FFBFA343CFEA84AC715148F25F9E86F398B408010CC403E7654FB908/scale?width=1440&aspectRatio=1.78",
+            "type": "recommend"
+          },
+          {
+            "id": 19,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A5E2BEF1F5656AD21A3010146A9ADC469B754318C6EF2934A0AC19F7486C5150/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0F0BF7366B84F6E768E478A59E59E124E38B658C32E3CCF8BCA5B1950CA216D5/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "In Marvel Studios’ “Doctor Strange in the Multiverse of Madness,” the MCU unlocks the Multiverse and pushes its boundaries further than ever before. Journey into the unknown with Doctor Strange, who, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
+            "subTitle": "2022 • 2h 8m • Science Fiction, Fantasy, Super Hero, Action-Adventure",
+            "title": "Doctor Strange",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7117086D0FB973554C63B533687E7D49F259C18C59BF6356CE0511C2B47B8C78/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "recommend"
+          },
+          {
+            "id": 3,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/706C68FF1CEA5A9C2AE0608892C2DF79E4AC1F0DDB4BFF7FE6DAFC36DAFC0286/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "A Chinese mom who’s sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. But she finds that nothing stays cute and small forever.",
+            "subTitle": "2018 • 7m • Family, Fantasy, Kids, Animation",
+            "title": "Bao",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78",
+            "type": "recommend"
+          },
+          {
+            "id": 4,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FA1548A6B82C9991B1D38DF251A388FEA2483904510FBC73E150F67F7BDE38C0/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0ECD36DD35658155915685271440833C29ED87E788CF8AE111AA6BCA6B939C37/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "When the kingdom's most wanted bandit is taken hostage by Rapunzel — a teen with 70 feet of golden hair who's looking to escape the tower where she's been locked away for years — the unlikely duo sets off on a hair-raising escapade.",
+            "subTitle": "2010 • 1h 40m • Family, Fantasy, Animation, Action-Adventure, Musical",
+            "title": "Tangled",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F70235E3463A6F246EB462ED5379F9D41D6318E80098BD40900E7AFC1C7D932D/scale?width=1440&aspectRatio=1.78",
+            "type": "trending"
+          },
+          {
+            "id": 5,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/56EEBB17CC25C9FE16E334C34EF96BF7D91EC9BA3B438F88FB24E1C2AE785E03/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E486A02FA7B60669E77958D4FAE567AA5C9C57344006E1D1ADFC080719545166/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+            "description": "Jamie Foxx leads an all-star cast in this hilarious, heart-filled adventure. Pixar’s 'Soul' introduces Joe, who lands the gig of his life at the best jazz club in town. But one misstep lands Joe in a fantastical place: The Great Before. There, he teams up with soul 22 (Tina Fey), and together they find the answers to some of life’s biggest questions.",
+            "subTitle": "2020 • 1h 49m • Family, Comedy, Fantasy, Animation, Music",
+            "title": "Soul",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E837DDE901CD036DD87A00F2D63E2F2458FAA798E62BE91F973AECCEA313A67E/scale?width=1440&aspectRatio=1.78",
+            "type": "original"
+          },
+          {
+            "id": 1,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/49B92C046117E89BC9243A68EE277A3B30D551D4599F23C10BF0B8C1E90AEFB6/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/87F1DCF36049558159913ADFD18A800DE1121771540033EC3A7651B8FE154CEB/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "When 11-year-old Riley moves to a new city, her Emotions team up to help her through the transition. Joy, Fear, Anger, Disgust and Sadness work together, but when Joy and Sadness get lost, they must journey through unfamiliar places to get back home.",
+            "subTitle": "2015 • 1h 35m • Coming of Age, Family, Animation",
+            "title": "Inside Out",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C647DF3FFBFA343CFEA84AC715148F25F9E86F398B408010CC403E7654FB908/scale?width=1440&aspectRatio=1.78",
+            "type": "recommend"
+          },
+          {
+            "id": 17,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EB8CE72116AFD256EB2F1ED45DB78566540B69BDDC2D24F83D27EED59368D11B/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/29859918D787A9A644D348B59AB90854C58DFD65DE68C50B9FBA28C423405167/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "Disney and Pixar’s “Lightyear”—the definitive origin story of Buzz Lightyear (voice of Chris Evans), the hero who inspired the toy—follows the legendary Space Ranger on an intergalactic adventure.",
+            "subTitle": "2022 • 1h 48m • Science Fiction, Animation, Action Adventure",
+            "title": "Lightyear",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F0305C1993FA02BAB78E73487E3DB1B5572EE3B98F4E53DE1D1914EE01DBEAC1/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "new"
+          },
+          {
+            "id": 6,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/AAC4808815AE5721A6AAB372DD14B8CE2E7E9EFF3A27942EF2B6B45EBF4E65CB/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/501783804F435A386DBC4736F529A8EF664B1817CCB0B552E52D825B85B0A97B/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "Moana sets sail on a daring mission to save her people. Along the way, she meets the mighty demigod Maui–together they cross the ocean on a fun-filled, action-packed voyage from Walt Disney Animation Studios.",
+            "subTitle": "2016 • 1h 47m • Family, Fantasy, Animation, Action-Adventure, Musical",
+            "title": "Moana",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9562874BAB22B22A698368819B9EBF30FEB0291543552EB2416A5A61A73F63F4/scale?width=1440&aspectRatio=1.78",
+            "type": "trending"
+          },
+          {
+            "id": 7,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B409C2A425D58C32D822EB633C7CAE3DC910DC2FC62D2B1807A0BB092C531E9A/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C0A883EAB54DDDC924018D08CF4555EE72B3E9A8C214BDADF29CB82B5E2275D7/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "While Helen is called on to lead a campaign to bring back the Supers, Bob navigates the day-to-day heroics of “normal” life at home with Violet, Dash and Jack-Jack, whose superpowers are about to be discovered. Their mission is derailed, however, when a new villain emerges with a brilliant and dangerous plot that threatens everything. But with Frozone by their side, the Parrs can take on anything.",
+            "subTitle": "2018 • 1h 58m • Science Fiction, Family, Animation, Action-Adventure",
+            "title": "Incredibles 2",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78",
+            "type": "recommend"
+          },
+          {
+            "id": 8,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D53D1F5D357587A8D09067AB09FFC7096F837CBAAE02BDC3C0E75814471A1E36/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CC08686E87BDB2D83A46C9608CB2F43018381A82608C380649351A00ED0D2919/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+            "description": "ASSEMBLED is an immersive series of documentary-style specials examining the creation of Marvel Studios’ thrilling new shows and theatrical releases.",
+            "subTitle": "2021 • 1 Season • Docuseries, Anthology",
+            "title": "Assembled",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/37D80C5D1AB0BA65C63588311EC60A07342F60F91D402C28B8E1137AF6A30549/scale?width=1440&aspectRatio=1.78",
+            "type": "original"
+          },
+          {
+            "id": 9,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2A509165105A09F9F533E2008B143BCF38D6A5859D0EBB40CCA388772005CD94/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A13BEC78ACF76FC91A94A1595A62A42CC26DFC6259332C74E061ADA379024E5C/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+            "description": "A young rabbit embarks on a journey to dig the burrow of her dreams, despite not having a clue what she’s doing. Rather than reveal to her neighbors her imperfections, she digs herself deeper and deeper into trouble. After hitting (bed)rock bottom, she learns there is no shame in asking for help.",
+            "subTitle": "2020 • 6m • Family, Animation",
+            "title": "Burrow",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DD8BBA864E290FBC03A244A488FFC8DC8365FBF2F95A122B1D57BF3772D717FD/scale?width=1440&aspectRatio=1.78",
+            "type": "original"
+          },
+          {
+            "id": 11,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F6CDB6C0EB2D77EB19BCADA31F85066E001A1F61FA68F4AC3356A73FE076477F/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F8D1A6FD00ED479CC5E2E5C3E85F10EB05550748BD3C0FE76756614071968541/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+            "description": "Marvel Studios LEGENDS traces Wanda Maximoff’s evolution from an adversary of The Avengers to a powerful ally, and highlights one special relationship destined to shape her future in unexpected ways…",
+            "subTitle": "2021 • 1 Season • Science Fiction, Fantasy, Action-Adventure",
+            "title": "Legends",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DDFF0FDF457E092EE53149CE7DB5BD14CB97E27B92D2D087E7C687B4E3073DE2/scale?width=1440&aspectRatio=1.78",
+            "type": "original"
+          },
+          {
+            "id": 12,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09A0617D43282F1A4FA1A97DF6159B4263A8DEB9679A007B61D5E5D6E5D0A2DD/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1E0501AFBAFCA1ABB5D31DBA7D1A913B2A35D70FD3DFD804939B71901577161D/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "Watch with Premier Access at the same time it's in open theaters and before it's available to all Disney+ subscribers on June 4, 2021.",
+            "subTitle": "2021 • 1h 52m • Family, Fantasy, Animation, Action-Adventure",
+            "title": "Raya",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E7D8EFFDD30B2A0E205DDD9929207439B21E7595709769F2A23C50457664FFB2/scale?width=1440&aspectRatio=1.78",
+            "type": "new"
+          },
+          {
+            "id": 13,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09DAD6A5DAECB6BA9E329FFA896B18978FE4AD5540C070D7973EE53357DD4D24/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/01666FAA085FF29B709DB13975E563E5E047DAAFF7D8F331201CB73F3C30027E/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "When Bob Parr visits designer Edna Mode for help with his high-energy toddler, she pulls an all-nighter designing a supersuit to harness Jack-Jack’s seemingly limitless powers.",
+            "subTitle": "2018 • 7m • Family, Comedy, Animation",
+            "title": "Auntie EDNA",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A31BE6502DC7A3A01DAF58DF7E91AB6FF598A078C8FA88A1DB2D7B7E25439464/scale?width=1440&aspectRatio=1.78",
+            "type": "original"
+          },
+          {
+            "id": 14,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6FF2B403436E6558C08FB44B40AE334A9172FA293A8325940E8E7FF7F696E4D3/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/509E4D9F0BF98A9DC4CDD38954380782F6AB2664E503CC7652A37D18D06666BF/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "Mickey entertains preschoolers by inviting them to join him and his friends for a date at the Clubhouse. Using early math learning and problem solving skills, he leads kids on an interactive adventure of learning and fun.",
+            "subTitle": "2006 - 2013 • 5 Seasons • Kids, Animation",
+            "title": "Mickey mouse",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4FF3FCD567F0263430DFC33B9489CE2799AE33B50AD553DE65F03B3EA2E19828/scale?width=1440&aspectRatio=1.78",
+            "type": "trending"
+          },
+          {
+            "id": 15,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/456A711C19899C881600F6247705E5253EB18C2471D75E5281E1FF6ACB6D2FBA/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/341AE85B6C1423B9042B5F2E786645EE551B9D546C3D263B220A4727617FD2B8/badging?width=400&aspectRatio=1.78&format=jpeg&label=originals",
+            "description": "Marvel Studios’ “The Falcon and The Winter Soldier” stars Anthony Mackie as Sam Wilson aka The Falcon, and Sebastian Stan as Bucky Barnes aka The Winter Soldier. The pair, who came together in the final moments of “Avengers: Endgame,” team up on a global adventure that tests their abilities—and their patience.",
+            "subTitle": "2021 • 1 Season • Science Fiction, Action-Adventure, Buddy",
+            "title": "The falcon and the winter soldier",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4A67A42FB16607DAE7E22266D3F00181965178ED1884047C2D982EE7D89D3554/scale?width=1440&aspectRatio=1.78",
+            "type": "new"
+          },
+          {
+            "id": 16,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/28F85D4A1F7CA135B7B20B3EDB42EDA73196C2A71C52C5400A6C2285F8E071BE/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4B32D8CB7C0C358E9FF348FB0338AD13F9A5836808E9EF5FADD9DBDE52FC3CAD/scale?width=400&aspectRatio=1.78&format=jpeg",
+            "description": "J-Pop band Perfume is featured in this original music and documentary series 'Disney’s My Music Story.' The show features Perfume's life stories, passion for music, Disney memories, and more.",
+            "subTitle": "2019 • 53m • Documentary, Biographical, Music",
+            "title": "My music story",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/97BB36F8B9FC053F561894DD7B1C42C4FD20E63560F481CBCB3B9D3600CFCA3B/scale?width=1440&aspectRatio=1.78",
+            "type": "new"
+          },
+          {
+            "id": 21,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/18F9869384FBD5725BB3316230D2EF5383E0300EE60E5681A23DF55C4DDD4DCD/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7BF8D434B7B43E4815C725C6A5FF4BF27D64E98D0EADD6C2D820E81008A94B6B/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal",
+            "description": "Marvel Studios’ 'Ms. Marvel' is an original series that introduces Kamala Khan, a Muslim American teenager growing up in Jersey City. An avid gamer and a voracious fan-fiction scribe, Kamala is a Super Hero mega fan with an oversized imagination—particularly when it comes to Captain Marvel. Yet Kamala feels like she doesn’t fit in at school and sometimes even at home—that is, until she gets super powers like the heroes she’s always looked up to. Life gets better with super powers, right?",
+            "subTitle": "2022 • 1 season • Coming of Age, Comedy, Super Hero, Action-Adventure",
+            "title": "Ms. Marvel",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C45AA585728BCEA5F89F94F64CDB721509FBECEB1780320FB9E188971D2E8BAC/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "origin"
+          },
+          {
+            "id": 22,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D05BD256DAAE7EF1CEA3D864BBC2A7A4CB23044B332C0A6D5E54602A563F7028/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/420B0AD3133D2DBA2775755BD991080FE6CFCADDF100DCC00294B1610A016412/scale?width=400&aspectRatio=0.71&format=jpeg",
+            "description": "When an old foe puts his homeland of Wakanda and the entire world at risk, young king T'Challa must release Black Panther’s full power to save them.",
+            "subTitle": "2018 • 2h 18m • Science Fiction, Super Hero, Action-Adventure",
+            "title": "Black Panther",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F25E70EE71B6B259DDAB5A71FE1E7DE20C066978E07A4BA0C74BDD8F79C008B6/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "origin"
+          },
+          {
+            "id": 24,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0364791C01E4D45B8682E3645457C6FD4B5B7DADADCB3E9BD49AFFB2526DEDA9/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F16C069D2D7A951FE453BA3EA755307087A3F687AB12CE2D7F66375BE31804F9/badging?width=400&aspectRatio=0.71&format=jpeg&label=disneyplusoriginal",
+            "description": "In Marvel Studios’ “She-Hulk: Attorney at Law,” Jennifer Walters—an attorney specializing in superhuman-oriented legal cases—must navigate the complicated life of a single, 30-something who also happens to be a green 6-foot-7-inch superpowered hulk.",
+            "subTitle": "2022 • 1 season • Science Fiction, Comedy, Super Hero, Action-Adventure",
+            "title": "She-Hulk",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/32E00A764E68E94028447B0D3763A720D507B2AB01757F4D164F86045F09DC4F/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "origin"
+          },
+          {
+            "id": 23,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FF42DBF09271A57B9330680668F708B48E194895B725623F4A6CB39B81910D0D/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4A1C62A415ECCD1D3F9317D7D06E8FF2F23C321D030FDF63A0008525DAB013ED/scale?width=400&aspectRatio=0.71&format=jpeg",
+            "description": "Shang-Chi must face the past he thought he left behind and confront his father, leader of the dangerous Ten Rings organization.",
+            "subTitle": "2021 • 2h 15m • Fantasy, Super Hero, Action-Adventure",
+            "title": "Shang-Chi",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/88417E755C9BA3015F0B97070D02C99CE8F16F67C30D790A4B3C41830F3C8B96/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "origin"
+          },
+          {
+            "id": 25,
+            "backgroundImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/26511B54425EEB2AAAD0E92E0EB4975F882297CEB6A3D167663A6A69B1EC4FDE/scale?width=1440&aspectRatio=1.78&format=jpeg",
+            "cardImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2D6F9E49D1822B1269F8591F8B97A906F62845B0C5AE7AE4850BB4EABA222375/scale?width=400&aspectRatio=0.71&format=jpeg",
+            "description": "Brash adventurer Peter Quill finds himself the object of an unrelenting bounty hunt after stealing a mysterious orb coveted by a powerful villain with ambitions that threaten the entire universe. To evade capture, Quill joins with a quartet of disparate misfits: Rocket, a gun-toting raccoon; Groot, a tree-like humanoid; the deadly and enigmatic Gamora; and revenge-driven Drax the Destroyer.",
+            "subTitle": "2014 • 2h 2m • Science Fiction, Comedy, Super Hero, Action-Adventure",
+            "title": "Guardians of the Galaxy",
+            "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B0982C6333BE528E5340D5B13981F1AD5715135FCB6DDF4427DCBFBDCF5BDCDB/scale?width=1440&aspectRatio=1.78&format=png",
+            "type": "origin"
+          }
+        ]
+      },
+      "headers": []
+    },
+    {
+      "id": "659d95e8-ce82-44fe-83f0-edd792b76430",
+      "route": "/disneyplus/continuewatching",
+      "httpMethod": "GET",
+      "statusCode": "200",
+      "delay": "1000",
+      "payload": [
+        {
+          "programType": "episode",
+          "title": "Groot Takes a Bath",
+          "progressValue": 25,
+          "remainingTimeM": 4,
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8D975DE9757A3D11358550721EDB4D1CB8F83A435975774DBA5D0D3A76A8D6CE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
+          "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8D975DE9757A3D11358550721EDB4D1CB8F83A435975774DBA5D0D3A76A8D6CE/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+        },
+        {
+          "programType": "episode",
+          "title": "Hawkeye",
+          "subTitle": "S1: E5 Ronin",
+          "progressValue": 10,
+          "remainingTimeM": 36,
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C64B81921DF04A82B499881F99AA0D94AFBEA0FC07CCED5084198ADF114D6045/badging?width=400&aspectRatio=NaN&format=jpeg&label=disneyplusoriginal",
+          "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E85F0AE2D3DAA98BFA8A8E539A8EDAE2A4A19FB702B42555F5E4939D578F3310/scale?width=400&aspectRatio=NaN&format=jpeg"
+        },
+        {
+          "programType": "episode",
+          "title": "Mandalorian",
+          "subTitle": "S1:E8 Chapter 8: Redemption",
+          "progressValue": 51,
+          "remainingTimeM": 21,
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4C2A5D03CCBD302C234F646ABB5F8C147F4D1218CB191D17A057B46D642DC255/badging?width=800&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
+          "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/75D42F1A9456EEFB959F132C9891BED5C095FDE1656954198FA723FAD7623C9B/scale?width=800&aspectRatio=1.78&format=jpeg"
+        },
+        {
+          "programType": "episode",
+          "title": "Wild Hawaii",
+          "subTitle": "S1:E1 Land of Fire",
+          "progressValue": 30,
+          "remainingTimeM": 124,
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/85B741C15E0B02F2EC404B70AEEADC91F8DEE62FEA73CC0E39589E1F754FBB9A/scale?width=800&aspectRatio=1.78&format=jpeg",
+          "onHoverImageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8BD7B086AD84F3744D9860C8BE9ECAA76FE2669EB3E5E2F899EF0CEBC7D0CF31/scale?width=800&aspectRatio=1.78&format=jpeg"
+        },
+        {
+          "programType": "movie",
+          "title": "Marvel Studios' Avengers: Endgame",
+          "progressValue": 82,
+          "remainingTimeM": 48,
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4B6A6F8433AF3163164D801742FEB9DBE26259E8AB9035FFBF4856C9DC3067BF/scale?width=800&aspectRatio=1.78&format=jpeg"
+        }
+      ],
+      "headers": []
+    },
+    {
+      "id": "8eff62bd-edf6-4e0c-905b-1543684d28bb",
+      "route": "/disneyplus/heroes",
+      "httpMethod": "GET",
+      "statusCode": "200",
+      "delay": "500",
+      "payload": [
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B736B115C2B175D1AEB5D55FC80CFF0D4DDA8AFBED1EFAB475E53A78C6D8439A/compose?width=1440&aspectRatio=3.91&format=jpeg&label=391_scrim"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1009F70AEDBD166AA9F70EDE790A69C4B7D96114CBD439BC8F97257654534D13/scale?width=1440&aspectRatio=3.91&format=jpeg"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2DB5F6CF7163036A8763318E24404882A6E4A1AC3E2BA75B7C0D53A7E372D180/scale?width=1440&aspectRatio=3.91&format=jpeg"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8A8895150F6E0D39880FD3A5946D5538D7D390D62D5A3AAB7F4CE7646FDDA4CE/compose?width=1440&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4935C3278A39E65D10E52CDDF97C2FEC233766709C678516FA95D133747C4467/scale?width=1440&aspectRatio=3.91&format=jpeg"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/28E5F40FFC193914040F79D8101E1E519473C0B5EAB4BE8FC502C2CCD83050C8/compose?width=1440&aspectRatio=3.91&format=jpeg&label=391_scrim"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/54373A3738774EC342F1FC2C1513F1B1C560E1F7543D2357446A90E2B55E74F1/scale?width=1440&aspectRatio=3.91&format=jpeg"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09463FB0C68877B902F12290649FE0A263CFFB4735DB50C3EB7DFD95AF4C912C/compose?width=1440&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim"
+        },
+        {
+          "imageSrc": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3A68411C94EAC6CE95C364E86089CEF3078A7689C7CE72CF5B3F8B031D092929/compose?width=1440&aspectRatio=3.91&format=jpeg&label=disneyplusoriginal_391_scrim",
+          "title": "hi"
+        }
+      ],
+      "headers": []
+    },
+    {
+      "id": "9b1ca8d3-2bef-4e54-97d4-fe2096b0d0d2",
+      "route": "/disneyplus/userprofile/:userId",
+      "httpMethod": "PUT",
+      "statusCode": "200",
+      "delay": "1500",
+      "payload": {
+        "success": true
+      },
+      "headers": [],
+      "disabled": false
+    },
+    {
+      "id": "9eb7f30f-2761-4a77-a7d8-30338f58117c",
+      "route": "/disneyplus/:seriesid/episodes",
+      "httpMethod": "GET",
+      "statusCode": "200",
+      "delay": "250",
+      "payload": [
+        {
+          "id": 1,
+          "title": "Simpsons Roasting on an Open Fire",
+          "description": "Homer's Christmas bonus is canceled and the rainy-day funds are needed for Bart's tattoo removal.",
+          "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4ECAFB1C3AF194EA01A7DA07AE07F3A6318865D1BBCE734E77421CFB7E4357E1/scale?width=800&aspectRatio=NaN&format=jpeg"
+        },
+        {
+          "id": 2,
+          "title": "Bart the Genius",
+          "description": "Bart is moved to a school for the gifted after he switches aptitude tests with another boy.",
+          "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/8BB3908FC1C0689DAD1428ACDF8C578B4594F0E0C98F468C641FE696C7E1AB95/scale?width=800&aspectRatio=NaN&format=jpeg"
+        },
+        {
+          "id": 3,
+          "title": "Homer's Odyssey",
+          "description": "Bart is moved to a school for the gifted after he switches aptitude tests with another boy.",
+          "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DB24F158A3B647D0E9ADE5DC7D4B66BC7DA1B5085C9393EE4BDAE719685E71EB/scale?width=800&aspectRatio=NaN&format=jpeg"
+        },
+        {
+          "id": 4,
+          "title": "There's No Disgrace Like Home",
+          "description": "After seeing families being nice to each other, Homer orders the Simpsons to a therapist.",
+          "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/132BD10FE6171F36A0268CD6BA027B1E840340C5A611FC73A77E24DDC516461A/scale?width=800&aspectRatio=NaN&format=jpeg"
+        },
+        {
+          "id": 5,
+          "title": "Bart the General",
+          "description": "Bart seeks counsel from Grandpa Simpson, who takes him to a warfare expert for basic training.",
+          "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7001054A4E0B2273596AAB916AA0A2BA9D117DD9D2EE13277A7445D40928792C/scale?width=800&aspectRatio=NaN&format=jpeg"
+        },
+        {
+          "id": 6,
+          "title": "Moaning Lisa",
+          "description": "Second grade has Lisa playing the blues solo. Homer seeks tutelage to beat Bart at video boxing.",
+          "imageUrl": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1A0A7049AE5E9ADE79803B7085B9F396D1A537285D0EC85DF854ED50E4459F1F/scale?width=800&aspectRatio=NaN&format=jpeg"
+        }
+      ],
+      "headers": []
+    }
+  ]
 }

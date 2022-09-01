@@ -25,7 +25,7 @@ export const getByCollectionType = createCachedSelector(
   // resultFunc
   (allItems, type) => {
     if (type === "all") {
-      return allItems;
+      return allItems.filter((x) => x.type !== "origin");
     }
 
     return allItems.filter((x) => x.type === type);

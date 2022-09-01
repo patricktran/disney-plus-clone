@@ -65,8 +65,8 @@ const Featured = ({
           {/* use carousel */}
           {inView && useCarousel && (
             <Carousel
-              slidesToShow={4}
-              slidesToScroll={4}
+              slidesToShow={5}
+              slidesToScroll={5}
               infinite={false}
               dots={false}
             >

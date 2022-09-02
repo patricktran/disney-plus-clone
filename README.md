@@ -10,6 +10,9 @@ In our professional lives, we are seldom given carte blanche to use the latest t
 <br /><br />
 Therefore, I took the challenge of creating a Disney Plus clone to sharpen my skill sets, practice reverse engineering, showcase the latest ReactJS tech, and to “flex” a little and have some fun.
 <br /><br />
+
+> Yes, this is an actual screenshot from my Display Plus clone app!
+
 ![screenshot](/disney-plus-clone-main.png?raw=true)
 
 ### Learnings

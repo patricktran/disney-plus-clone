@@ -1,7 +1,7 @@
 import { QueryClient } from "react-query";
 
 // custom query client with aggressive, but sane defaults
-// See: https://github.com/tannerlinsley/react-query/blob/master/src/core/types.ts
+// See: https://github.com/TanStack/query/blob/v3.38.1/src/core/types.ts
 export default new QueryClient({
   defaultOptions: {
     queries: {

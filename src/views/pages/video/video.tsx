@@ -27,7 +27,7 @@ const Video = () => {
       <VideoPageContainer.Main>
         <VideoPlayer
           onTitleBugClick={goBack}
-          url="http://dash.edgesuite.net/akamai/bbb_30fps/bbb_with_tiled_thumbnails.mpd"
+          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
           title={itemDetails.title}
         />
       </VideoPageContainer.Main>
@@ -37,4 +37,5 @@ const Video = () => {
 
 export default Video;
 
+// "http://dash.edgesuite.net/akamai/bbb_30fps/bbb_with_tiled_thumbnails.mpd"
 // "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"

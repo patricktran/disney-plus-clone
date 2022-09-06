@@ -31,13 +31,13 @@ Therefore, I took the challenge of creating a Disney Plus clone to sharpen my sk
 
     - Check out my [shaka-player-ui-controls](https://www.npmjs.com/package/shaka-player-ui-controls) NPM package
 
-- [Redux Toolkit](https://redux-toolkit.js.org/) really cuts down the usual Redux boilerplate code. [ReactQuery](https://react-query-v3.tanstack.com/overview) is the best way to go when you need to fetch data without sharing it globally. I also integrated ReduxToolkit (RTK) Query and Redux Observable (RxJS) for use cases where it would make sense to store the response in Redux.
+- [Redux Toolkit](https://redux-toolkit.js.org/) really cuts down the usual Redux boilerplate code. [ReactQuery](https://react-query-v3.tanstack.com/overview) is the best way to go when you need to fetch data without sharing it globally. I also integrated ReduxToolkit (RTK) Query and Redux Observable (RxJS) for use cases where it made sense to store the response in Redux.
 
   - Redux Toolkit and ReactQuery have built-in data caching and query retries.
 
 - You can boost rendering performance by using the [Interaction Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) to perform lazy loading and lazy rendering. Nifty stuff.
 
-- [Styled Components](https://styled-components.com/) (CSS-in-JS) are awesome! Although there seems to be a shift towards TailWindCSS?
+- I really enjoyed using [Styled Components](https://styled-components.com/) (CSS-in-JS) it prevented having to hunt across different files! Although there seems to be a shift towards TailWindCSS?
 
 ## Disney Plus Clone App
 

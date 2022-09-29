@@ -69,6 +69,8 @@ const Container = styled.div`
 `;
 
 const Brand = styled(Card)`
+  cursor: default;
+
   &::after {
     border: 3px solid rgba(249, 249, 249, 0.1);
   }

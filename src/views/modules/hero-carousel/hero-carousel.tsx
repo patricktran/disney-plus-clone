@@ -33,7 +33,7 @@ const HeroImageContainer = styled.div`
 
 const HeroLink = styled.a`
   box-shadow: ${(props) => props.theme.boxShadow.default};
-  cursor: pointer;
+  cursor: default;
   display: block;
   position: relative;
   border-radius: 4px;

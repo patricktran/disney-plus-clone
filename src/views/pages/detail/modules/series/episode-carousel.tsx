@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components/macro";
 
 import { PlayCard, DummyCard } from "components/card";
 import Carousel from "components/carousel";
+import { ROUTE_PATHS } from "routes/paths";
+import { catalogConstants } from "state/ducks/catalog";
 import { useGetEpisodesQuery } from "state/services";
 import { EpisodeItem } from "state/services/rtk-query/disneymock/types";
 import { screenSizes } from "styles/theme";
 import { shuffleArray } from "utils/helpers/functional";
-
 interface Props {
   season: number;
   episodeCount: number;
@@ -55,6 +57,7 @@ const ResponsiveBreakPoints = [
 
 const EpisodeCarousel = ({ season, episodeCount }: Props) => {
   const { data, isFetching } = useGetEpisodesQuery(season);
+  const navigate = useNavigate();
   const [shuffledEpisodes, setShuffledEpisodes] = useState<EpisodeItem[]>([]);
 
   useEffect(() => {
@@ -63,6 +66,10 @@ const EpisodeCarousel = ({ season, episodeCount }: Props) => {
       setShuffledEpisodes(shuffleArray(data));
     }
   }, [isFetching, data, season]);
+
+  const playVideo = () => {
+    navigate(`${ROUTE_PATHS.VIDEO}/${catalogConstants.SIMPSONS_SERIES_ID}`);
+  };
 
   return (
     <Container>
@@ -79,12 +86,17 @@ const EpisodeCarousel = ({ season, episodeCount }: Props) => {
               return <DummyCard key={i} />;
             })
           : shuffledEpisodes?.map((episode: any, index: number) => (
-              <PlayCard
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
+              <a
+                onClick={playVideo}
                 key={Math.floor(Math.random() * 100 * episode.id)}
-                imageSrc={episode.imageUrl}
-                title={`${index + 1}. ${episode.title}`}
-                description={episode.description}
-              />
+              >
+                <PlayCard
+                  imageSrc={episode.imageUrl}
+                  title={`${index + 1}. ${episode.title}`}
+                  description={episode.description}
+                />
+              </a>
             ))}
       </Carousel>
     </Container>

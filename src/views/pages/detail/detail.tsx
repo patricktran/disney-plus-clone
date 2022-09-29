@@ -11,7 +11,7 @@ import { OverlayLoader } from "components/loader";
 import Typography from "components/typography";
 import Vingette from "components/vingette";
 import { ROUTE_PATHS } from "routes/paths";
-import { catalogSelectors } from "state/ducks/catalog";
+import { catalogSelectors, catalogConstants } from "state/ducks/catalog";
 import { useAppSelector } from "state/hooks";
 import AppContext from "utils/app-context";
 import { noop } from "utils/helpers/functional";
@@ -35,6 +35,8 @@ const Detail = () => {
   }, []);
 
   const { id } = useParams<any>();
+
+  const showEpisodesTab = id === catalogConstants.SIMPSONS_SERIES_ID;
 
   const itemDetails = useAppSelector((state) =>
     catalogSelectors.getCatalogItemById(state, +id!)
@@ -82,12 +84,16 @@ const Detail = () => {
               <Typography variant="pl">{itemDetails?.description}</Typography>
             </DescriptionContainer>
           </MetaContainer>
-          <TabNav>
-            <Tab>Episodes</Tab>
-          </TabNav>
-          <TabContent>
-            <SeriesNav />
-          </TabContent>
+          {showEpisodesTab && (
+            <>
+              <TabNav>
+                <Tab>Episodes</Tab>
+              </TabNav>
+              <TabContent>
+                <SeriesNav />
+              </TabContent>
+            </>
+          )}
         </article>
       </OverlayLoader>
     </StyledPageContainer>

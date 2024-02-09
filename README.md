@@ -1,3 +1,5 @@
+> Onbsolete - Check out my updated repo!  [Disney Plus Clone NextJS](https://github.com/patricktran/disney-plus-nextjs-clone).
+
 # Disney Plus Clone
 
 > Tech Showcase

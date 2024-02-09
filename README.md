@@ -1,4 +1,5 @@
-> :warning: O**bsolete - Check out my updated repo!  [Disney Plus Clone NextJS](https://github.com/patricktran/disney-plus-nextjs-clone) **
+> [!NOTE]
+> :warning: Obsolete - Check out my updated repo!  [Disney Plus Clone NextJS](https://github.com/patricktran/disney-plus-nextjs-clone) 
 
 # Disney Plus Clone
 
